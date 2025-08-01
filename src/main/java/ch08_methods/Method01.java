@@ -11,6 +11,7 @@ public class Method01 {
 
     //1. [x|x] [입력값 / 출력값]
     public static void call1() {
+
         System.out.println("[ x | x ]");
     }
 
