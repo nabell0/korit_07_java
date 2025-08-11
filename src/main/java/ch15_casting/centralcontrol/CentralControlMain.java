@@ -17,12 +17,52 @@ public class CentralControlMain {
         // 저희는 그래서 centralControl 객체를 만들면서 내부의 필드에 비어있는 Power[] qodufdmf
         // 집어 넣었습니다.
         CentralControl centralControl= new CentralControl(
-                new Power[5]
+                new Power[10]
         );
 
         centralControl.addDevice(computer1);
         centralControl.addDevice(airConditioner1);
         centralControl.addDevice(speaker1);
+
+        /*
+            Mouse / LED 클래스를 정의하고 on() / off() 메서드를
+            implememnt하고,
+            CentralControlMain으로 와서
+            각 객체를 생성한 다음에
+            CentralControl 객체에 집어넣기.
+         */
+        Mouse mouse = new Mouse();
+        LED led = new LED();
+        Printer printer1 = new Printer();
+        centralControl.addDevice(mouse);
+        centralControl.addDevice(led);
+        centralControl.addDevice(printer1);
+
+        centralControl.powerOn();
+        centralControl.powerOff();
+
+        System.out.println("--------continue-------");
+//        for (int i = 0 ; i < 10 ; i++){
+//            System.out.println(i+1);
+//        }
+//        for (int i = 0 ; i < 10 ; i++){
+//            if((i+1)%2 != 2){
+//                System.out.println(i);
+//            }
+//        }
+//
+//        for (int i = 0 ; i < 10 ; i++){
+//            if((i+1)% 2 == 1){
+//                continue;         // continue : 해당 반복을 종료하고 다음 반복을 실행
+//            }
+//            System.out.println(i);
+//        }
+
+        centralControl.showInfo();
+
+        speaker1.changeEqual();
+
+        centralControl.performSpecificMethod();
 
     }
 }
