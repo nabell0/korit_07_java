@@ -15,7 +15,7 @@ class Dog extends Animal{
     }
 
     public void fetch(){
-        System.out.println("강아지가 공을 물어옵니다.");
+        System.out.println("공을 가져옵니다.");
     }
 }
 

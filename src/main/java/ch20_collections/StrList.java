@@ -63,22 +63,22 @@ public class StrList {
         // 전체 element 들 출력 방법
         // 1. 배열
         // 일반 for문으로 출력
-        for(int i = 0 ; i < strArray.length;i++){
-            System.out.print(strArray[i]);
-        }
-        // 향상된 for문으로 출력
-        for(String data : strArray){
-            System.out.print(data + " ");
-        }
-        System.out.println();
-        // 2. 리스트
-        for(int i = 0 ; i< strList.size();i++){
-            System.out.print(strList.get(i)+" ");
-        }
-        System.out.println();
-        // 향상된 for문
-        for (String elem : strList){
-            System.out.print(elem + " ");
-        }
+//        for(int i = 0 ; i < strArray.length;i++){
+//            System.out.print(strArray[i]);
+//        }
+//        // 향상된 for문으로 출력
+//        for(String data : strArray){
+//            System.out.print(data + " ");
+//        }
+//        System.out.println();
+//        // 2. 리스트
+//        for(int i = 0 ; i< strList.size();i++){
+//            System.out.print(strList.get(i)+" ");
+//        }
+//        System.out.println();
+//        // 향상된 for문
+//        for (String elem : strList){
+//            System.out.print(elem + " ");
+//        }
     }
 }
